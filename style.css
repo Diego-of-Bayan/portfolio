@@ -1,0 +1,66 @@
+.row{   
+
+    background-color:black;
+    color:white;
+    font-size:20px;
+}
+.headshot{
+    width:20%;
+   
+}
+.secondary {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.aboutme{
+    border:1px solid black;   
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mid {
+    background-color:white;
+    color:black;
+    align-items:center;
+    font-size:50px;
+    margin-top:5px;
+    margin-bottom:5px;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 25%;
+    animation-name: nameAnimation;
+    animation-duration: 3s;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.rowMid2 {
+    background-color:white;
+    color:black;
+    align-items:center;
+    font-size:50px;
+    margin-top:5px;
+    margin-bottom:5px;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+@keyframes nameAnimation {
+    0% {opacity: 0;}
+    75% {transform: scale(0.5) translate(0px,-400px);}
+}
+.name {
+    font-size: 60px;
+}
+#music {
+    opacity: 0;
+}

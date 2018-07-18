@@ -105,12 +105,11 @@ body {
     position: absolute;
     top: 150px;
     font-size: 20px;
-    background-image: url("https://i.ytimg.com/vi/J8WMYBv0ul4/maxresdefault.jpg");
     background-color: black;
 }
 .dropbtn {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 .dropdown {
     position: relative;

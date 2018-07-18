@@ -1,15 +1,19 @@
-.row{   
+body {
+    height: 200vh;
+    margin: 0px;
+}
+.row {   
 
     background-color:black;
     color:white;
     font-size:20px;
 }
-.headshot{
+.headshot {
     width:20%;
    
 }
 .secondary {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s;
 }
 .aboutme{
@@ -18,7 +22,7 @@
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .mid {
     background-color:white;
@@ -36,31 +40,57 @@
     padding-right: 25%;
     animation-name: nameAnimation;
     animation-duration: 3s;
-    opacity: 1;
-    transition: opacity 1s;
-}
-.rowMid2 {
-    background-color:white;
-    color:black;
-    align-items:center;
-    font-size:50px;
-    margin-top:5px;
-    margin-bottom:5px;
-    position: absolute;
-    top: 35%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 25%;
-    padding-right: 25%;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: opacity 2s;
 }
 @keyframes nameAnimation {
-    0% {opacity: 0;}
-    75% {transform: scale(0.5) translate(0px,-400px);}
+    0% {opacity: 1;}
+    75% {transform: scale(0.5) translate(0px,-500px);}
 }
 .name {
     font-size: 60px;
 }
 #music {
     opacity: 0;
+}
+#backgroundPic {
+    position: relative;
+    left: 35px;
+}
+.footer {
+   background-color: black;
+    animation-name: slideIn1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 700px;
+    width: 100vw;
+}
+@keyframes slideIn1 {
+    100% {transform: translate(0px,-615px);}
+}
+.aboutme {
+   background-color: black;
+    animation-name: slideIn2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 700px;
+    width: 100vw;
+}
+@keyframes slideIn2 {
+    100% {transform: translate(0px,-520px);}
+}
+.contact {
+   background-color: black;
+    animation-name: slideIn3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 700px;
+    width: 100vw;
+}
+@keyframes slideIn3 {
+    100% {transform: translate(0px,250px);}
 }

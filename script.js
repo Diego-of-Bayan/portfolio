@@ -1,5 +1,5 @@
 /*global $*/
-$(".mainMain").hide();
+$(".mainMai").hide();
 $(".rowMid2").hide();
 $(".mid").css("opacity","1");
 var scrollCount = 0;

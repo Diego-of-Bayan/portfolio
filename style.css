@@ -99,7 +99,7 @@ body {
     100% {transform: translate(0px,250px);}
 }
 #bio {
-    width: 100vw;
+    width: 101vw;
     height: 50vh;
     color: white;
     position: absolute;
